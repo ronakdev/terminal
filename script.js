@@ -20,7 +20,20 @@ function tabComplete(e) {
     console.log("Tab: " + destination.value);
     if (destination.value.substring(0,1) == "p" ) {
         destination.value = "projects";
+        window.location.href="https://github.com/ronakdev";
     }
-    else if (destination.value.substring(0,1))
+    else if (destination.value.substring(0,1) == "r") {
+        
+                destination.value = "resume";
+        window.location.href ="resume.pdf";
+
+    }
+    
+    else if (destination.value.substring(0,1) == "a") {
+        
+                destination.value = "apps";
+        window.location.href = "apps";
+
+    }
     e.preventDefault();
 }
