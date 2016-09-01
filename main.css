@@ -1,0 +1,55 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+}
+.terminal {
+    left: 10;
+}
+.title, .text, .code{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 3em;
+}
+.code, .text{
+    color: lightgreen;
+}
+
+.text {
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.text:focus {
+    outline-width: 0;
+}
+@media only screen and (max-width: 320px) {
+  .title, .code {
+    font-size: 1.5em;
+  }
+
+}
+
+a {
+    color: #4A90E2;
+}
+a:hover {
+    color: white;
+}
+
+.content {
+    padding-top: 15vh;
+}
