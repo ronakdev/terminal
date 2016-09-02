@@ -33,14 +33,17 @@ function runCommand() {
     }
     else {
         switch (destintation) {
-            case "./.secretcommand.sh": {
+		case "hint":
+			alert("I like to install what pieces of software with a progress bar");
+			break;
+		case "./.secretcommand.sh": 
                 alert("It ain't gonna be that easy :D");
                 break;
-            }
-            case "sudo": {
+      
+		case "sudo": 
                 alert("Good News: There isn't a password (idk why).\n\n Bad News: You didn't complete the challenge.")
                 break;
-            }
+            
             case "sudo ./.secretcommand.sh":
                 alert("you have completed the first challenge. i dare ye to find the final challenge :D :D");
                 break;
