@@ -1,4 +1,8 @@
+/*
+    ATTENTION: THIS IS A LAME CTF. IF YOU LOOK HERE FOR THE FLAG YOU ARE A SCRUB SINCE BASIC LINUX COMMANDS WILL GIVE YOU THE ANSWER.
 
+    THANK YOU
+*/
 var wage = document.getElementById("navigation");
 
 wage.addEventListener("keydown", function (e) {
@@ -43,9 +47,16 @@ function runCommand() {
             case "sudo su":
                 alert("god damn it you solved the second. but I DOUBT YOU WILL FIND THE FINAL");
                 break;
-            case "sudo apt install sl lolcat tree":
-                alert("Idk who dafaq you are, but you know me way to well.");
-                break;
+            case "sudo apt install sl lolcat figlet":
+            case "sudo apt install sl figlet lolcat":
+            case "sudo apt install lolcat sl figlet":
+            case "sudo apt install lolcat figlet sl":
+            case "sudo apt install figlet lolcat sl":
+            case "sudo apt install figlet sl lolcat":
+
+            alert("Idk who dafaq you are, but you know me way to well.");
+            alert("|=|26: {WOW_RONAK_SUCH_WOW_MUCH_WOW_MUCH_ENCRYPTION_LOL}");
+            break;
             case "sl":
                 var msg = '                              (@@) (  ) (@)  ( )  @@    ()    @     O     @\n'+
     '                         (   )\n' +
@@ -86,7 +97,7 @@ function runCommand() {
             case "apps":
                 goTo("/apps");
                 break;
-            case "easter":
+            case "easter egg":
                 goTo("/spookyspookyskeletonstotallynotaneasteregg");
             default:
                 var nav = document.getElementById("navigation")
@@ -99,7 +110,7 @@ function runCommand() {
 function tabComplete() {
     var destination = document.getElementById("navigation");
 
-    console.log("Tab: " + destination.value);
+    //console.log("Tab: " + destination.value);
     if (destination.value.substring(0,1) == "p" ) {
         destination.value = "projects";
     }
@@ -113,16 +124,16 @@ function tabComplete() {
     else if (destination.value.substring(0,2) == "ac") {
         destination.value = "achievements";
     }
-    else if (destination.value.substring(0,1) == "l") {
+    else if ( (destination.value.substring(0,1) == "l") && (destination.value.length < 2)) {
         destination.value = "ls";
     }
-    else if (destination.value.substring(0,1) == "c") {
+    else if ((destination.value.substring(0,1) == "c") && (destination.value.length < 2)) {
         destination.value = "cd";
     }
-    else if (destination.value.substring(0,1) == ".") {
+    else if ((destination.value.substring(0,1) == ".") && (destination.value.length < 2)) {
         destination.value = "./";
     }
-    else if (destination.value.substring(0,1) == "s") {
+    else if ((destination.value.substring(0,1) == "s") && (destination.value.length < 4)) {
         destination.value = "sudo";
     }
 }

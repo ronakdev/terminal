@@ -23,6 +23,9 @@ header {
     text-decoration: none;
     font-size: 3em;
 }
+.text {
+    width: 60vw;
+}
 .code, .text{
     color: lightgreen;
 }
