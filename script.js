@@ -33,6 +33,9 @@ function runCommand() {
     }
     else {
         switch (destintation) {
+		case "cat favoritesoftware.txt": 
+			alert("lolcat, figlet, and sl are great");
+			break;
 		case "hint":
 			alert("I like to install what pieces of software with a progress bar");
 			break;
@@ -83,7 +86,7 @@ function runCommand() {
                 alert("Easter Egg [Directory]");
                 break;
             case "ls -a":
-                alert(".secretcommand.sh");
+                alert(".secretcommand.sh\nfavoritesoftware.txt");
                 break;
             case "help":
                 alert(" Use basic and custom terminal commands to navigate your way through!\n\n achievments -> View my Achievements \n\n projects -> View my Projects\n\n resume -> View my Resume\n\n apps -> View my resume");
