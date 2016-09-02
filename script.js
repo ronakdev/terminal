@@ -86,7 +86,10 @@ function runCommand() {
                 alert(" Use basic and custom terminal commands to navigate your way through!\n\n achievments -> View my Achievements \n\n projects -> View my Projects\n\n resume -> View my Resume\n\n apps -> View my resume");
                 break;
             case "achievements":
-                goTo("/achievements");
+                goTo("/index.html#achievements");
+                break;
+            case "about":
+                goTo("/index.html#about");
                 break;
             case "projects":
                 goTo("/projects");
@@ -117,7 +120,9 @@ function tabComplete() {
     else if (destination.value.substring(0,1) == "r") { 
         destination.value = "resume";
     }
-    
+    else if (destination.value.substring(0,2) == "ab") {
+        destination.value = "about";
+    }
     else if (destination.value.substring(0,2) == "ap") {
         destination.value = "apps";
     }
