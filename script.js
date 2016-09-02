@@ -37,7 +37,7 @@ function runCommand() {
 			alert("lolcat, figlet, and sl are great");
 			break;
 		case "hint":
-			alert("I like to install what pieces of software with a progress bar");
+			alert("I like to install what pieces of software In Ubuntu?");
 			break;
 		case "./.secretcommand.sh": 
                 alert("It ain't gonna be that easy :D");
@@ -53,12 +53,12 @@ function runCommand() {
             case "sudo su":
                 alert("god damn it you solved the second. but I DOUBT YOU WILL FIND THE FINAL");
                 break;
-            case "sudo apt install sl lolcat figlet":
-            case "sudo apt install sl figlet lolcat":
-            case "sudo apt install lolcat sl figlet":
-            case "sudo apt install lolcat figlet sl":
-            case "sudo apt install figlet lolcat sl":
-            case "sudo apt install figlet sl lolcat":
+            case "sudo apt-get install sl lolcat figlet":
+            case "sudo apt-get install sl figlet lolcat":
+            case "sudo apt-get install lolcat sl figlet":
+            case "sudo apt-get install lolcat figlet sl":
+            case "sudo apt-get install figlet lolcat sl":
+            case "sudo apt-get install figlet sl lolcat":
 
             alert("Idk who dafaq you are, but you know me way to well.");
             alert("|=|26: {WOW_RONAK_SUCH_WOW_MUCH_WOW_MUCH_ENCRYPTION_LOL}");
