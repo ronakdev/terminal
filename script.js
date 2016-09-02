@@ -100,8 +100,9 @@ function runCommand() {
             case "apps":
                 goTo("/apps");
                 break;
-            case "easter egg":
+            case "easter\\ egg":
                 goTo("/spookyspookyskeletonstotallynotaneasteregg");
+				break;
             default:
                 var nav = document.getElementById("navigation")
                 nav.value = "invalid command";
